@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +8,74 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
+
 <body>
+
+    <!--Navbar Section Starting-->
+    <section class="bg-[#5865f2]">
+        <div class="2xl:container mx-auto">
+            <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+                <div class="flex flex-row justify-between items-center">
+                    <img src="assets/discord-navbar.png" alt="discord" class="h-12 md:h-16">
+                    <div class="flex flex-col md:hidden">
+                        <svg viewbox="0 0 24 24" fill="white" height="1.5em" width="1.5em" id="menubar">
+                            <path
+                                d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z" />
+                        </svg>
+
+                        <svg fill="none" viewbox="0 0 15 15" height="1.5em" width="1.5em" class="hidden" id="crossbar">
+                            <path fill="white" fillRule="evenodd"
+                                d="M11.782 4.032a.575.575 0 10-.813-.814L7.5 6.687 4.032 3.218a.575.575 0 00-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 00.814.814L7.5 8.313l3.469 3.469a.575.575 0 00.813-.814L8.313 7.5l3.469-3.468z"
+                                cliprule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+                <hr class="md:hidden">
+                <div id="content"
+                    class="md:flex flex-col justify-center items-center md:flex-row md:justify-end md:items-center gap-5 py-2 hidden">
+                    <p class="font-[Roboto] text-gray-200 hover:text-white font-medium text-xl hover:cursor-pointer" id="home">
+                         Home</p>
+                    <p class="font-[Roboto] text-gray-200 hover:text-white font-medium text-xl hover:cursor-pointer" id="cards">
+                        Cards</p>
+                    <p class="font-[Roboto] text-gray-200 hover:text-white font-medium text-xl hover:cursor-pointer" id="feature">
+                        Feature</p>
+                    <p class="font-[Roboto] text-gray-200 hover:text-white font-medium text-xl hover:cursor-pointer" id="connect">
+                        Connect</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Navbar Section Starting-->
+
     <!--Section 1 Starting-->
     <section class="bg-[url('assets/hero-bg.jpg')] bg-no-repeat bg-cover">
-        <div class="2xl:container mx-auto h-[600px]">
+        <div class="2xl:container mx-auto h-[600px] ">
             <div class="w-[90%] mx-auto grid grid-cols-1  h-[100%] ">
-                <div class="flex flex-col justify-center items-center text-center has-[100%] w-auto md:w-[674px] mx-auto space-y-7">
-                        <h1 class="font-[Roboto] text-3xl font-bold text-white">IMAGINE A PLACE...</h1>
-                        <P class="font-[Roboto] text-white font-light"> ...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</P>    
+                <div
+                    class="flex flex-col justify-center items-center text-center has-[100%] w-auto md:w-[674px] mx-auto space-y-7">
+                    <h1 class="font-[Roboto] text-3xl font-bold text-white">IMAGINE A PLACE...</h1>
+                    <P class="font-[Roboto] text-white font-light"> ...where you can belong to a school club, a gaming
+                        group, or a worldwide art community. Where just you and a handful of friends can spend time
+                        together. A place that makes it easy to talk every day and hang out more often.</P>
                     <div class="flex flex-col md:flex-row justify-center items-center gap-3">
-                        <button class="flex flex-row justify-center items-center gap-1 bg-white py-2 px-4 rounded-3xl space-x-3">
-                            <svg
-                               viewBox="0 0 1024 1024" fill="currentColor" height="1em" width="1em" {..props}>
-                               <path d="M505.7 661a8 8 0 0012.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9h-74.1V168c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v338.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.8zM878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8z" />
-                           </svg>
-                           <span class="font-[Roboto] text-black font-light">Download for Windows</span>
-                       </button>
-                       <button class="font-[Roboto] bg-black text-white font-light py-2 px-4 rounded-3xl">Open Discord in your Browser</button>
-                    </div>  
+                        <button
+                            class="flex flex-row justify-center items-center gap-1 bg-white py-2 px-4 rounded-3xl space-x-3">
+                            <svg viewBox="0 0 1024 1024" fill="currentColor" height="1em" width="1em" {..props}>
+                                <path
+                                    d="M505.7 661a8 8 0 0012.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9h-74.1V168c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v338.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.8zM878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8z" />
+                            </svg>
+                            <span class="font-[Roboto] text-black font-light">Download for Windows</span>
+                        </button>
+                        <button class="font-[Roboto] bg-black text-white font-light py-2 px-4 rounded-3xl">Open Discord
+                            in your Browser</button>
+                    </div>
                 </div>
             </div>
     </section>
@@ -43,64 +89,75 @@
                     <img src="assets/section-1.svg" alt="section1-img">
                 </div>
                 <div class="flex flex-col justify-center items-start lg:w-[400px] mx-auto">
-                    <h2 class="font-[Roboto] text-2xl font-semibold text-black">Create an invite-only place where you belong</h2>
-                    <p class="font-[Roboto] text-black font-light">Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
+                    <h2 class="font-[Roboto] text-2xl font-semibold text-black">Create an invite-only place where you
+                        belong</h2>
+                    <p class="font-[Roboto] text-black font-light">Discord servers are organized into topic-based
+                        channels where you can collaborate, share, and just talk about your day without clogging up a
+                        group chat.</p>
                 </div>
             </div>
         </div>
     </section>
     <!--Section 2 Ending-->
 
-       <!--Card Section Starting-->
-       <section>
+    <!--Card Section Starting-->
+    <section>
         <div class="2xl:container mx-auto">
             <div class="w-[90%] mx-auto grid grid-cols-1 pt-5">
                 <div>
                     <h2 class="font-[Roboto] text-3xl font-semibold text-black text-center">Gift Cards</h2>
                 </div>
             </div>
-             <div class="w-[90%] mx-auto grid  xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 py-14 gap-14 "> 
+            <div class="w-[90%] mx-auto grid  xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 py-14 gap-14 ">
 
-                    <div class="flex flex-row justify-center items-center ">
-                        <div class="bg-[url('assets/card1.jpg')] rounded-xl"> 
-                                <h3 class="text-white text-end pt-4 pr-4 font-semibold text-2xl">20<span class="font-[Roboto] text-base text-white font-semibold pl-1">rs</span></h3>
-                                <h3 class="font-[Roboto] text-white font-semibold text-lg text-center pt-16">Kilo</h3>
-                                    <img src="assets/Discordname.png" alt="Discord-img">
-                                    <h2 class="text-white font-[Roboto] text-center text-2xl font-semibold">Gift Card</h2>
-                                <p class="text-white font-[Roboto] text-center pt-12 pb-4 px-2">Download and enjoy your favourite game for PC,Mac and Limux!</p>  
-                        </div> 
+                <div class="flex flex-row justify-center items-center ">
+                    <div class="bg-[url('assets/card1.jpg')] rounded-xl">
+                        <h3 class="text-white text-end pt-4 pr-4 font-semibold text-2xl">20<span
+                                class="font-[Roboto] text-base text-white font-semibold pl-1">rs</span></h3>
+                        <h3 class="font-[Roboto] text-white font-semibold text-lg text-center pt-16">Kilo</h3>
+                        <img src="assets/Discordname.png" alt="Discord-img">
+                        <h2 class="text-white font-[Roboto] text-center text-2xl font-semibold">Gift Card</h2>
+                        <p class="text-white font-[Roboto] text-center pt-12 pb-4 px-2">Download and enjoy your
+                            favourite game for PC,Mac and Limux!</p>
                     </div>
+                </div>
 
-                    <div class="flex flex-row justify-center items-center">
-                        <div class="bg-[url('assets/card2.jpg')] rounded-xl"> 
-                                <h3 class="text-white text-end pt-4 pr-4 font-semibold text-2xl">40<span class="font-[Roboto] text-base text-white font-semibold pl-1">rs</span></h3>
-                                <h3 class="font-[Roboto] text-white font-semibold text-lg text-center pt-16">Mega</h3>
-                                    <img src="assets/Discordname.png" alt="Discord-img">
-                                    <h2 class="text-white font-[Roboto] text-center text-2xl font-semibold">Gift Card</h2>
-                                <p class="text-white font-[Roboto] text-center pt-12 pb-4 px-2">Download and enjoy your favourite game for PC,Mac and Limux!</p>  
-                        </div> 
+                <div class="flex flex-row justify-center items-center">
+                    <div class="bg-[url('assets/card2.jpg')] rounded-xl">
+                        <h3 class="text-white text-end pt-4 pr-4 font-semibold text-2xl">40<span
+                                class="font-[Roboto] text-base text-white font-semibold pl-1">rs</span></h3>
+                        <h3 class="font-[Roboto] text-white font-semibold text-lg text-center pt-16">Mega</h3>
+                        <img src="assets/Discordname.png" alt="Discord-img">
+                        <h2 class="text-white font-[Roboto] text-center text-2xl font-semibold">Gift Card</h2>
+                        <p class="text-white font-[Roboto] text-center pt-12 pb-4 px-2">Download and enjoy your
+                            favourite game for PC,Mac and Limux!</p>
                     </div>
+                </div>
 
-                    <div class="flex flex-row justify-center items-center">
-                        <div class="bg-[url('assets/card3.jpg')] rounded-xl"> 
-                                <h3 class="text-white text-end pt-4 pr-4 font-semibold text-2xl">80<span class="font-[Roboto] text-base text-white font-semibold pl-1">rs</span></h3>
-                                <h3 class="font-[Roboto] text-white font-semibold text-lg text-center pt-16">Giga</h3>
-                                    <img src="assets/Discordname.png" alt="Discord-img">
-                                    <h2 class="text-white font-[Roboto] text-center text-2xl font-semibold">Gift Card</h2>
-                                <p class="text-white font-[Roboto] text-center pt-12 pb-4 px-2">Download and enjoy your favourite game for PC,Mac and Limux!</p>  
-                        </div> 
+                <div class="flex flex-row justify-center items-center">
+                    <div class="bg-[url('assets/card3.jpg')] rounded-xl">
+                        <h3 class="text-white text-end pt-4 pr-4 font-semibold text-2xl">80<span
+                                class="font-[Roboto] text-base text-white font-semibold pl-1">rs</span></h3>
+                        <h3 class="font-[Roboto] text-white font-semibold text-lg text-center pt-16">Giga</h3>
+                        <img src="assets/Discordname.png" alt="Discord-img">
+                        <h2 class="text-white font-[Roboto] text-center text-2xl font-semibold">Gift Card</h2>
+                        <p class="text-white font-[Roboto] text-center pt-12 pb-4 px-2">Download and enjoy your
+                            favourite game for PC,Mac and Limux!</p>
                     </div>
+                </div>
 
-                    <div class="flex flex-row justify-center items-center">
-                        <div class="bg-[url('assets/card4.jpg')] rounded-xl "> 
-                                <h3 class="text-white text-end pt-4 pr-4 font-semibold text-2xl">100<span class="font-[Roboto] text-base text-white font-semibold pl-1">rs</span></h3>
-                                <h3 class="font-[Roboto] text-white font-semibold text-lg text-center pt-16">Tera</h3>
-                                    <img src="assets/Discordname.png" alt="Discord-img">
-                                    <h2 class="text-white font-[Roboto] text-center text-2xl font-semibold">Gift Card</h2>
-                                <p class="text-white font-[Roboto] text-center pt-12 pb-4 px-2">Download and enjoy your favourite game for PC,Mac and Limux!</p>  
-                        </div> 
+                <div class="flex flex-row justify-center items-center">
+                    <div class="bg-[url('assets/card4.jpg')] rounded-xl ">
+                        <h3 class="text-white text-end pt-4 pr-4 font-semibold text-2xl">100<span
+                                class="font-[Roboto] text-base text-white font-semibold pl-1">rs</span></h3>
+                        <h3 class="font-[Roboto] text-white font-semibold text-lg text-center pt-16">Tera</h3>
+                        <img src="assets/Discordname.png" alt="Discord-img">
+                        <h2 class="text-white font-[Roboto] text-center text-2xl font-semibold">Gift Card</h2>
+                        <p class="text-white font-[Roboto] text-center pt-12 pb-4 px-2">Download and enjoy your
+                            favourite game for PC,Mac and Limux!</p>
                     </div>
-        
+                </div>
+
             </div>
         </div>
     </section>
@@ -113,10 +170,12 @@
             <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 py-12 gap-9">
                 <div class="flex flex-col justify-center items-start lg:w-[400px] mx-auto order-2 md:order-1">
                     <h2 class="font-[Roboto] text-2xl font-semibold text-black">Where hanging out is easy</h2>
-                    <p class="font-[Roboto] text-black font-light">Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.</p>
+                    <p class="font-[Roboto] text-black font-light">Grab a seat in a voice channel when you’re free.
+                        Friends in your server can see you’re around and instantly pop in to talk without having to
+                        call.</p>
                 </div>
                 <div class="flex flex-col justify-center items-center order-1 md:order-2">
-                    <img src="assets/section-2.svg" alt="section2-img">            
+                    <img src="assets/section-2.svg" alt="section2-img">
                 </div>
             </div>
         </div>
@@ -132,7 +191,9 @@
                 </div>
                 <div class="flex flex-col justify-center items-start lg:w-[400px] mx-auto">
                     <h2 class="font-[Roboto] text-2xl font-semibold text-black">From a few to a fandom</h2>
-                    <P class="font-[Roboto] text-black font-light">Get a community of any size running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</P>
+                    <P class="font-[Roboto] text-black font-light">Get a community of any size running with moderation
+                        tools and custom member access. Give members special powers, set up private channels, and more.
+                    </P>
                 </div>
             </div>
         </div>
@@ -145,17 +206,20 @@
             <div class="w-[90%] mx-auto grid grid-cols-1">
                 <div class="flex flex-col justify-center items-center space-y-4">
                     <h1 class="font-[Roboto] text-3xl font-bold text-black"> RELIABLE TECH FOR STAYING CLOSE</h1>
-                    <p class="font-[Roboto] text-black font-light md:w-[680px] text-center">Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</p>
+                    <p class="font-[Roboto] text-black font-light md:w-[680px] text-center">Low-latency voice and video
+                        feels like you’re in the same room. Wave hello over video, watch friends stream their games, or
+                        gather up and have a drawing session with screen share.</p>
                     <img src="assets/section-4.svg" alt="">
                     <div class="space-y-4">
                         <h2 class="font-[Roboto] text-2xl font-semibold text-black">Ready to start journey ?</h2>
-                        <button class="flex flex-row justify-center items-center gap-1 bg-[#404eed] py-2 px-4 rounded-3xl space-x-3">
-                            <svg
-                               viewBox="0 0 1024 1024" fill="rgb(255 255 255)" height="1em" width="1em" {..props}>
-                               <path d="M505.7 661a8 8 0 0012.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9h-74.1V168c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v338.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.8zM878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8z" />
-                           </svg>
+                        <button
+                            class="flex flex-row justify-center items-center gap-1 bg-[#404eed] py-2 px-4 rounded-3xl space-x-3">
+                            <svg viewBox="0 0 1024 1024" fill="rgb(255 255 255)" height="1em" width="1em" {..props}>
+                                <path
+                                    d="M505.7 661a8 8 0 0012.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9h-74.1V168c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v338.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.8zM878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8z" />
+                            </svg>
                             <span class="font-[Roboto] text-white font-light">Download for Windows</span>
-                        </button> 
+                        </button>
                     </div>
                 </div>
             </div>
@@ -172,68 +236,72 @@
     <section class="bg-[#23272a] pt-14 pb-8">
         <div class="2xl:container mx-auto">
             <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3 space-y-9">
-            <div>
-                <div class="flex flex-row justify-center items-center gap-2">
-                    <img src="assets/flag.png" alt="flag-img" class="h-4">
-                    <p class="font-[Roboto] text-white">English</p>
-                </div>
+                <div>
+                    <div class="flex flex-row justify-center items-center gap-2">
+                        <img src="assets/flag.png" alt="flag-img" class="h-4">
+                        <p class="font-[Roboto] text-white">English</p>
+                    </div>
                     <div class="flex flex-row justify-center items-center gap-4 pt-5">
                         <svg viewBox="0 0 1024 1024" fill="rgb(255 255 255)" height="1.75em" width="1.75em" {...props}>
-                            <path d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1 717.1 625.5 717.1 512 625.5 306.9 512 306.9zm0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7 645.3 438.6 645.3 512 585.4 645.3 512 645.3zm213.5-394.6c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9 47.9-21.3 47.9-47.9a47.84 47.84 0 00-47.9-47.9zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zm-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1-18.2-7.3-31.8-16.1-45.8-30.2-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9 7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2 14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z" />
+                            <path
+                                d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1 717.1 625.5 717.1 512 625.5 306.9 512 306.9zm0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7 645.3 438.6 645.3 512 585.4 645.3 512 645.3zm213.5-394.6c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9 47.9-21.3 47.9-47.9a47.84 47.84 0 00-47.9-47.9zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zm-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1-18.2-7.3-31.8-16.1-45.8-30.2-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9 7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2 14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z" />
                         </svg>
- 
+
                         <svg fill="rgb(255 255 255)" viewBox="0 0 16 16" height="1.55em" width="1.5em" {...props}>
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                         </svg>
-  
+
                         <svg viewBox="0 0 24 24" fill="rgb(255 255 255)" height="1.75em" width="1.75em" {...props}>
-                            <path d="M21.593 7.203a2.506 2.506 0 00-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 00-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 001.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z" />
+                            <path
+                                d="M21.593 7.203a2.506 2.506 0 00-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 00-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 001.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z" />
                         </svg>
 
                         <svg fill="rgb(255 255 255)" viewBox="0 0 16 16" height="1.5em" width="1.5em" {...props}>
-                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 11-5-5v2a3 3 0 103 3V0z" />
+                            <path
+                                d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 11-5-5v2a3 3 0 103 3V0z" />
                         </svg>
                     </div>
-            </div>
-            <div class="flex flex-row justify-center items-start">
-                <div class="flex flex-col justify-center items-start mx-auto gap-1">
-                    <p class="text-white pb-3">Product</p>
-                    <p class="text-[#d6d6d8] hover:underline">Download</p>
-                    <p class="text-[#d6d6d8] hover:underline">Nitro</p>
-                    <p class="text-[#d6d6d8] hover:underline">Status</p>
-                    <p class="text-[#d6d6d8] hover:underline">App Directory</p>
-                    <p class="text-[#d6d6d8] hover:underline">Mobile Experience</p>
                 </div>
-                <div class="flex flex-col justify-center items-start mx-auto gap-1">
-                    <p class="text-white pb-3">Company</p>
-                    <p class="text-[#d6d6d8] hover:underline">About</p>
-                    <p class="text-[#d6d6d8] hover:underline">Jobs</p>
-                    <p class="text-[#d6d6d8] hover:underline">Brand</p>
-                    <p class="text-[#d6d6d8] hover:underline">Newsroom</p>
+                <div class="flex flex-row justify-center items-start">
+                    <div class="flex flex-col justify-center items-start mx-auto gap-1">
+                        <p class="text-white pb-3">Product</p>
+                        <p class="text-[#d6d6d8] hover:underline">Download</p>
+                        <p class="text-[#d6d6d8] hover:underline">Nitro</p>
+                        <p class="text-[#d6d6d8] hover:underline">Status</p>
+                        <p class="text-[#d6d6d8] hover:underline">App Directory</p>
+                        <p class="text-[#d6d6d8] hover:underline">Mobile Experience</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-start mx-auto gap-1">
+                        <p class="text-white pb-3">Company</p>
+                        <p class="text-[#d6d6d8] hover:underline">About</p>
+                        <p class="text-[#d6d6d8] hover:underline">Jobs</p>
+                        <p class="text-[#d6d6d8] hover:underline">Brand</p>
+                        <p class="text-[#d6d6d8] hover:underline">Newsroom</p>
+                    </div>
                 </div>
-            </div>
-            <div class="flex flex-row justify-center items-start ">
-                <div class="flex flex-col justify-center items-start mx-auto gap-1">
-                    <p class="text-white pb-3">Resources</p>
-                    <p class="text-[#d6d6d8] hover:underline">College</p>
-                    <p class="text-[#d6d6d8] hover:underline">support</p>
-                    <p class="text-[#d6d6d8] hover:underline">Safety</p>
-                    <p class="text-[#d6d6d8] hover:underline">Blog</p>
-                    <p class="text-[#d6d6d8] hover:underline">Feedback</p>
-                    <p class="text-[#d6d6d8] hover:underline">StreamKit</p>
-                    <p class="text-[#d6d6d8] hover:underline">Creator</p>
+                <div class="flex flex-row justify-center items-start ">
+                    <div class="flex flex-col justify-center items-start mx-auto gap-1">
+                        <p class="text-white pb-3">Resources</p>
+                        <p class="text-[#d6d6d8] hover:underline">College</p>
+                        <p class="text-[#d6d6d8] hover:underline">support</p>
+                        <p class="text-[#d6d6d8] hover:underline">Safety</p>
+                        <p class="text-[#d6d6d8] hover:underline">Blog</p>
+                        <p class="text-[#d6d6d8] hover:underline">Feedback</p>
+                        <p class="text-[#d6d6d8] hover:underline">StreamKit</p>
+                        <p class="text-[#d6d6d8] hover:underline">Creator</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-start mx-auto gap-1">
+                        <p class=" text-white pb-3">Policies</p>
+                        <p class=" text-[#d6d6d8] hover:underline">Terms</p>
+                        <p class=" text-[#d6d6d8] hover:underline">Privacy</p>
+                        <p class=" text-[#d6d6d8] hover:underline">Cookie Settings</p>
+                        <p class=" text-[#d6d6d8] hover:underline">Guidelines</p>
+                        <p class=" text-[#d6d6d8] hover:underline">Acknowledgemwnts</p>
+                        <p class=" text-[#d6d6d8] hover:underline">Licenses</p>
+                        <p class=" text-[#d6d6d8] hover:underline">Compant Information</p>
+                    </div>
                 </div>
-                <div class="flex flex-col justify-center items-start mx-auto gap-1">
-                    <p class=" text-white pb-3">Policies</p>
-                    <p class=" text-[#d6d6d8] hover:underline">Terms</p>
-                    <p class=" text-[#d6d6d8] hover:underline">Privacy</p>
-                    <p class=" text-[#d6d6d8] hover:underline">Cookie Settings</p>
-                    <p class=" text-[#d6d6d8] hover:underline">Guidelines</p>
-                    <p class=" text-[#d6d6d8] hover:underline">Acknowledgemwnts</p>
-                    <p class=" text-[#d6d6d8] hover:underline">Licenses</p>
-                    <p class=" text-[#d6d6d8] hover:underline">Compant Information</p>
-                </div>
-            </div>
             </div>
 
             <div class="w-[90%] mx-auto grid grid-cols-1 pt-8">
@@ -246,5 +314,83 @@
         </div>
     </section>
     <!--Last Section Ending-->
+
+<script>
+    const menubaricon=document.getElementById("menubar");
+    const crossbar=document.getElementById("crossbar");
+
+    const contents=document.getElementById("content");
+
+    const home=document.getElementById("home");
+    const cards=document.getElementById("cards");
+    const feature=document.getElementById("feature");
+    const connect=document.getElementById("connect");
+
+    menubaricon.addEventListener('click',()=>{
+        console.log("menubar clicked")
+        crossbar.classList.toggle("hidden")
+        menubaricon.classList.toggle("hidden")
+        contents.classList.toggle("hidden")
+        contents.classList.remove("md:flex")
+        contents.classList.add("flex")
+    })
+
+    crossbar.addEventListener('click',()=>{
+        console.log("crossbar clicked")
+        crossbar.classList.toggle("hidden")
+        menubaricon.classList.toggle("hidden")
+        contents.classList.toggle("hidden")
+        contents.classList.remove("md:flex")
+        contents.classList.add("flex")
+    })
+
+    home.addEventListener('click',()=>{
+        crossbar.classList.toggle("hidden")
+        menubaricon.classList.toggle("hidden")
+        contents.classList.toggle("hidden")
+        if(window.innerWidth >= 768) {
+            contents.classList.remove("hidden")
+            contents.classList.add("block")
+        }
+        contents.classList.remove("md:flex")
+        contents.classList.add("flex")
+    })
+    cards.addEventListener('click',()=>{
+        crossbar.classList.toggle("hidden")
+        menubaricon.classList.toggle("hidden")
+        contents.classList.toggle("hidden")
+        if(window.innerWidth >= 768) {
+            contents.classList.remove("hidden")
+            contents.classList.add("block")
+        }
+        contents.classList.remove("md:flex")
+        contents.classList.add("flex")
+    })
+    feature.addEventListener('click',()=>{
+        crossbar.classList.toggle("hidden")
+        menubaricon.classList.toggle("hidden")
+        contents.classList.toggle("hidden")
+        if(window.innerWidth >= 768) {
+            contents.classList.remove("hidden")
+            contents.classList.add("block")
+        }
+        contents.classList.remove("md:flex")
+        contents.classList.add("flex")
+    })
+    connect.addEventListener('click',()=>{
+        crossbar.classList.toggle("hidden")
+        menubaricon.classList.toggle("hidden")
+        contents.classList.toggle("hidden")
+        if(window.innerWidth >= 768) {
+            contents.classList.remove("hidden")
+            contents.classList.add("block")
+        }
+        contents.classList.remove("md:flex")
+        contents.classList.add("flex")
+    })
+
+</script>
+
 </body>
+
 </html>
